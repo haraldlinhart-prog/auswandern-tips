@@ -12,7 +12,7 @@ const crumbs = [
 export const metadata = pageMetadata({
   title: 'Länder-Ratgeber zum Auswandern',
   description:
-    'Auswandern nach Thailand, Spanien, Portugal, Dubai, Zypern, in die USA, die Schweiz oder nach Kanada: Aufenthalt, Steuern, Versicherung, Kosten, Arbeit und Konto.',
+    'Auswandern nach Thailand, Madagaskar, Spanien, Portugal, Dubai, Zypern, in die USA, die Schweiz oder nach Kanada: Aufenthalt, Steuern, Versicherung, Kosten, Arbeit und Konto.',
   path: '/laender',
 });
 
@@ -25,8 +25,9 @@ export default function CountriesPage() {
         <p className="eyebrow">Länder</p>
         <h1>Länder-Ratgeber zum Auswandern</h1>
         <p className="lede">
-          Acht Ziele, dieselbe Fragenliste. So sehen Sie, wo ein Touristenstatus endet und wo die
-          EU-Freizügigkeit nur den Anfang der Anmeldung ist.
+          Neun Ziele. Die meisten Seiten folgen derselben Fragenliste, Madagaskar ergänzt Regionen
+          und den Ruhestand. So sehen Sie, wo ein Touristenstatus endet und wo die EU-Freizügigkeit
+          nur den Anfang der Anmeldung ist.
         </p>
       </header>
       <ul className="card-grid">

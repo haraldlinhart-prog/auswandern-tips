@@ -110,7 +110,7 @@ export const thailand: Guide = guide({
         'Für die meisten Visa ist Sprache keine formale Voraussetzung. Im Alltag der Touristenorte kommt man mit Englisch weit, bei Behörden, Mietverträgen und Kliniken außerhalb dieser Orte nicht. Wer langfristig bleibt, sollte Thai zumindest so weit lernen, dass Verträge nicht nur über Dritte laufen.',
     },
   ],
-  related: [links.portugal, links.spanien, links.steuern, links.krankenversicherung, links.rente, links.checkliste],
+  related: [links.madagaskar, links.portugal, links.spanien, links.steuern, links.krankenversicherung, links.rente, links.checkliste],
   sources: sourcesWorld,
 });
 

@@ -16,6 +16,18 @@ export type RelatedLink = {
   label: string;
 };
 
+export type PartnerOffer = {
+  title: string;
+  text: string;
+};
+
+export type PartnerCta = {
+  title: string;
+  href: string;
+  lead: string;
+  offers: PartnerOffer[];
+};
+
 export type Guide = {
   kind: 'country' | 'topic';
   slug: string;
@@ -29,4 +41,5 @@ export type Guide = {
   faqs: FaqItem[];
   related: RelatedLink[];
   sources: string[];
+  partner?: PartnerCta;
 };
