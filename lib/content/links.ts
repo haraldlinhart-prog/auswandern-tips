@@ -9,6 +9,7 @@ export const links = {
   bank: { href: '/ratgeber/bankkonto-im-ausland', label: 'Bankkonto im Ausland' },
   rente: { href: '/ratgeber/rente-im-ausland', label: 'Rente im Ausland' },
   thailand: { href: '/laender/thailand', label: 'Thailand' },
+  madagaskar: { href: '/laender/madagaskar', label: 'Madagaskar' },
   spanien: { href: '/laender/spanien', label: 'Spanien' },
   portugal: { href: '/laender/portugal', label: 'Portugal' },
   dubai: { href: '/laender/dubai-vae', label: 'Dubai und die VAE' },

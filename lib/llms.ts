@@ -12,7 +12,7 @@ export function buildLlmsTxt(): string {
   const lines = [
     '# auswandern-tips.de',
     '',
-    '> Unabhängige Ratgeber zum Auswandern aus Deutschland, Österreich und der Schweiz. Jede Länderseite beantwortet dieselben Fragen: Visum und Aufenthalt, Steuern, Krankenversicherung, Lebenshaltungskosten, Arbeit und Firma, Bankkonto, Checkliste. Keine Rechts-, Steuer- oder Versicherungsberatung. Regeln ändern sich, verbindlich sind Behörden und zugelassene Beratung.',
+    '> Unabhängige Ratgeber zum Auswandern aus Deutschland, Österreich und der Schweiz. Die Länderseiten behandeln Aufenthalt, Steuern, Krankenversicherung, Lebenshaltungskosten, Arbeit und Konto. Madagaskar ergänzt Regionen, Ruhestand und ein Angebot der Betreuung vor Ort. Keine Rechts-, Steuer- oder Versicherungsberatung. Regeln ändern sich, verbindlich sind Behörden und zugelassene Beratung.',
     '',
     `Kanonische Adresse: ${SITE_URL}`,
     'Sprache: Deutsch',
@@ -54,6 +54,16 @@ function guideBlock(guide: Guide, path: string): string[] {
       ...(section.bullets ? ['', ...section.bullets.map((bullet) => `- ${plainText(bullet)}`)] : []),
       '',
     ]),
+    ...(guide.partner
+      ? [
+          `### ${guide.partner.title}`,
+          '',
+          plainText(guide.partner.lead),
+          '',
+          ...guide.partner.offers.map((offer) => `- ${offer.title}: ${plainText(offer.text)} (${guide.partner?.href})`),
+          '',
+        ]
+      : []),
   ];
 }
 

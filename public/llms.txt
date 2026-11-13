@@ -1,12 +1,13 @@
 # auswandern-tips.de
 
-> Unabhängige Ratgeber zum Auswandern aus Deutschland, Österreich und der Schweiz. Jede Länderseite beantwortet dieselben Fragen: Visum und Aufenthalt, Steuern, Krankenversicherung, Lebenshaltungskosten, Arbeit und Firma, Bankkonto, Checkliste. Keine Rechts-, Steuer- oder Versicherungsberatung. Regeln ändern sich, verbindlich sind Behörden und zugelassene Beratung.
+> Unabhängige Ratgeber zum Auswandern aus Deutschland, Österreich und der Schweiz. Die Länderseiten behandeln Aufenthalt, Steuern, Krankenversicherung, Lebenshaltungskosten, Arbeit und Konto. Madagaskar ergänzt Regionen, Ruhestand und ein Angebot der Betreuung vor Ort. Keine Rechts-, Steuer- oder Versicherungsberatung. Regeln ändern sich, verbindlich sind Behörden und zugelassene Beratung.
 
 Kanonische Adresse: https://www.auswandern-tips.de
 Sprache: Deutsch
 
 ## Länder
 - [Thailand](https://www.auswandern-tips.de/laender/thailand): Visum, Steuern, Krankenversicherung, Kosten, Arbeit und Konto für einen längeren Aufenthalt in Thailand, ausgehend von Deutschland, Österreich oder der Schweiz.
+- [Madagaskar](https://www.auswandern-tips.de/laender/madagaskar): Warum Madagaskar für Ruhestand und Geschäft genannt wird: Aufenthalt, Kosten, Regionen, Gesundheit, Steuern, Firma und Konto, ohne erfundene Preise.
 - [Spanien](https://www.auswandern-tips.de/laender/spanien): Anmeldung, NIE, Steuern, Krankenversicherung und Alltag für einen Umzug aus Deutschland, Österreich oder der Schweiz nach Spanien.
 - [Portugal](https://www.auswandern-tips.de/laender/portugal): Anmeldung, NIF, Steuern nach dem Ende des alten NHR-Regimes, Krankenversicherung und Konto für einen Umzug nach Portugal.
 - [Dubai und die VAE](https://www.auswandern-tips.de/laender/dubai-vae): Aufenthaltserlaubnis, Steuern, Pflichtversicherung, Kosten, Firma und Konto für einen Umzug in die Vereinigten Arabischen Emirate.
