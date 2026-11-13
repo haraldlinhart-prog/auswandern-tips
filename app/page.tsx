@@ -35,7 +35,7 @@ export default function HomePage() {
           </div>
         </div>
         <aside className="hero-panel">
-          <h2>Dieselben Fragen, acht Länder</h2>
+          <h2>Dieselben Grundfragen, neun Länder</h2>
           <ol>
             <li>Visum und Aufenthalt</li>
             <li>Steuern und Wegzug</li>
@@ -54,10 +54,11 @@ export default function HomePage() {
       </p>
 
       <section className="section">
-        <h2>Acht Länder im gleichen Raster</h2>
+        <h2>Neun Länder im gleichen Raster</h2>
         <p className="section-intro">
           Damit Sie Thailand nicht mit Spanien verwechseln und Dubai nicht mit einer EU-Anmeldung.
-          Jede Seite beginnt mit einer Kurzantwort.
+          Jede Seite beginnt mit einer Kurzantwort. Madagaskar ergänzt Regionen, Ruhestand und die
+          Betreuung vor Ort.
         </p>
         <ul className="card-grid">
           {countries.map((guide) => (

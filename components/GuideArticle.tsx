@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { readingMinutes } from '@/lib/content/reading';
-import type { Guide } from '@/lib/content/types';
+import type { Guide, PartnerCta } from '@/lib/content/types';
 import { articleJsonLd, breadcrumbJsonLd, faqJsonLd } from '@/lib/seo';
 import { formatGermanDate } from '@/lib/site';
 import { Breadcrumbs } from './Breadcrumbs';
@@ -37,6 +37,7 @@ export function GuideArticle({
             <strong className="label">Kurzantwort</strong>
             <RichText text={guide.summary} />
           </div>
+          {guide.partner ? <PartnerBox partner={guide.partner} /> : null}
         </header>
         <div className="guide-layout">
           <div className="guide-main">
@@ -115,9 +116,38 @@ export function GuideArticle({
   );
 }
 
+function PartnerBox({ partner }: { partner: PartnerCta }) {
+  return (
+    <aside className="partner-cta" id="betreuung">
+      <p className="label">{partner.title}</p>
+      <p>
+        <RichText text={partner.lead} />
+      </p>
+      <ol>
+        {partner.offers.map((offer) => (
+          <li key={offer.title}>
+            <a href={partner.href} rel="noopener noreferrer">
+              {offer.title}
+            </a>
+            <span> {offer.text}</span>
+          </li>
+        ))}
+      </ol>
+      <a className="button" href={partner.href} rel="noopener noreferrer">
+        Zu pan21.africa
+      </a>
+    </aside>
+  );
+}
+
 function TocList({ guide }: { guide: Guide }) {
   return (
     <ol>
+      {guide.partner ? (
+        <li>
+          <a href="#betreuung">Betreuung vor Ort</a>
+        </li>
+      ) : null}
       {guide.sections.map((section) => (
         <li key={section.id}>
           <a href={`#${section.id}`}>{section.heading}</a>
