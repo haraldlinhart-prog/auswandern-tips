@@ -7,7 +7,7 @@ const crumbs = [
   { name: 'Datenschutz', path: '/datenschutz' },
 ];
 
-const sections = [
+const sections: { title: string; body: string | string[] }[] = [
   {
     title: 'Verantwortlicher',
     body: 'Verantwortlich für die Datenverarbeitung auf dieser Website ist die PAN21.com International LLC, 7533 South Center View CT, STE R, West Jordan, UT 84084, USA, vertreten durch Harald Linhart. E-Mail: dsgvo@pan21.com, Telefon: +49 30 5684450-0.',
@@ -18,7 +18,16 @@ const sections = [
   },
   {
     title: 'Cookies',
-    body: 'Diese Website setzt keine Cookies zu Analyse- oder Werbezwecken. Für den Betrieb der Seiten selbst setzen wir keine Cookies. Ist der optionale Spamschutz Cloudflare Turnstile aktiviert, kann dieser Anbieter technisch notwendige Cookies setzen. Es gibt kein Nutzerkonto und kein Analysewerkzeug.',
+    body: 'Für den Betrieb der Seiten selbst setzen wir keine Cookies. Analyse- und Werbecookies von Google Analytics setzen wir nur, wenn Sie einwilligen; Einzelheiten stehen im Abschnitt Google Analytics 4. Ihre Entscheidung speichern wir im lokalen Speicher des Browsers und nicht in einem Cookie. Ist der optionale Spamschutz Cloudflare Turnstile aktiviert, kann dieser Anbieter technisch notwendige Cookies setzen. Es gibt kein Nutzerkonto. Über „Cookie-Einstellungen“ in der Fußzeile können Sie die Entscheidung jederzeit ändern.',
+  },
+  {
+    title: 'Google Analytics 4',
+    body: [
+      'Wir setzen Google Analytics 4 ein, einen Dienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Google kann Daten auch an die Google LLC in den USA übermitteln. Die Mess-ID lautet G-RJC3FZKEZP. Das Tag ist auf jeder Seite eingebunden. Damit möchten wir erkennen, welche Beiträge gelesen werden, und das Angebot verbessern.',
+      'Vor Ihrer Entscheidung gilt Google Consent Mode v2: analytics_storage, ad_storage, ad_user_data und ad_personalization stehen auf „denied“. Ohne Einwilligung werden keine Analyse-Cookies gesetzt. Google kann in diesem Zustand eine cookielose Meldung erhalten, die keine wiederkehrende Kennung in einem Cookie speichert.',
+      'Erst „Akzeptieren“ stellt die vier Zwecke auf „granted“. Dann kann Google Analytics Cookies schreiben, vor allem _ga und _ga_RJC3FZKEZP, und verarbeitet insbesondere aufgerufene Seiten, Verweildauer, ungefähre Region sowie Geräte- und Browserdaten. Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. „Ablehnen“ lässt die Zwecke auf „denied“ und löscht bereits vorhandene _ga-Cookies. Die Wahl liegt im lokalen Speicher des Browsers. Über „Cookie-Einstellungen“ in der Fußzeile können Sie sie jederzeit mit Wirkung für die Zukunft ändern.',
+      'Google Analytics 4 speichert IP-Adressen nicht in voller Länge. Soweit Daten in die USA übermittelt werden, stützt sich das auf die EU-Standardvertragsklauseln. Weitere Hinweise von Google stehen unter https://policies.google.com/privacy und https://support.google.com/analytics/answer/6004245.',
+    ],
   },
   {
     title: 'Kontaktformular und E-Mail',
@@ -41,7 +50,7 @@ const sections = [
 export const metadata = pageMetadata({
   title: 'Datenschutzerklärung',
   description:
-    'Datenschutz auf auswandern-tips.de: Verantwortlicher PAN21.com International LLC, Hosting bei Vercel, Kontaktformular über Resend.',
+    'Datenschutz auf auswandern-tips.de: Verantwortlicher PAN21.com International LLC, Hosting bei Vercel, Kontaktformular über Resend, Google Analytics nur mit Einwilligung.',
   path: '/datenschutz',
   noIndex: true,
 });
@@ -59,7 +68,9 @@ export default function PrivacyPage() {
           <h2>
             {index + 1}. {section.title}
           </h2>
-          <p>{section.body}</p>
+          {(Array.isArray(section.body) ? section.body : [section.body]).map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
         </section>
       ))}
       <p className="fine">Stand: 13. November 2026</p>

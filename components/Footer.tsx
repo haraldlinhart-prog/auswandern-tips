@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { CookieSettingsButton } from '@/components/CookieSettingsButton';
 import { countries, countryPath, topicPath, topics } from '@/lib/content';
 
 export function Footer() {
@@ -38,6 +39,9 @@ export function Footer() {
             </li>
             <li>
               <Link href="/datenschutz">Datenschutz</Link>
+            </li>
+            <li>
+              <CookieSettingsButton />
             </li>
           </ul>
         </div>
