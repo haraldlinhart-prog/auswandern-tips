@@ -497,3 +497,8 @@ body:has(.cookie-banner) { padding-bottom: 8rem; }
   body { background: white; padding-bottom: 0 !important; }
   a { text-decoration: underline; }
 }
+
+/* Revive-Banner (Zone 6) im Footer: auf Smartphones nicht breiter als der Bildschirm */
+.footer-ad ins[data-revive-zoneid] { display: block; max-width: 100%; min-width: 0; }
+.footer-ad ins[data-revive-zoneid] img,
+.footer-ad ins[data-revive-zoneid] iframe { display: block; max-width: 100%; height: auto; }
