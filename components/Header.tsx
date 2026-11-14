@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SuchmaschinenBlogLink from './SuchmaschinenBlogLink';
 
 const links = [
   { href: '/laender', label: 'Länder' },
@@ -47,6 +48,8 @@ export function Header() {
               ))}
             </ul>
           </details>
+          {/* suchmaschinen.pro:blog-link */}
+          <SuchmaschinenBlogLink />
         </nav>
       </div>
     </header>
