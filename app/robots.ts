@@ -29,7 +29,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: '*', ...content },
       ...aiAgents.map((userAgent) => ({ userAgent, ...content })),
     ],
-    sitemap: absoluteUrl('/sitemap.xml'),
+    sitemap: [absoluteUrl('/sitemap.xml'), absoluteUrl('/sitemap-blog.xml')],
     host: absoluteUrl('/'),
   };
 }
